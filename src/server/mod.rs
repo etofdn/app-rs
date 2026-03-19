@@ -54,6 +54,17 @@ pub use crate::protocol::methods::tempo::session_method::{
     SessionMethodConfig,
 };
 
+// ==================== ETOvm re-exports ====================
+
+#[cfg(feature = "etovm")]
+pub use crate::protocol::methods::etovm::ChargeMethod as EtovmChargeMethod;
+
+#[cfg(feature = "etovm")]
+pub use crate::protocol::methods::etovm::{
+    EtovmChargeExt, EtovmMethodDetails, CHAIN_ID as ETOVM_CHAIN_ID,
+    METHOD_NAME as ETOVM_METHOD_NAME,
+};
+
 // ==================== Simple API ====================
 
 /// Configuration for the Tempo payment method.

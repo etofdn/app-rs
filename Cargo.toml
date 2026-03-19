@@ -21,6 +21,7 @@ server = ["tokio", "futures-core", "async-stream"]
 # Method implementations
 evm = ["alloy", "hex", "rand"]
 tempo = ["evm", "tempo-alloy", "tempo-primitives", "uuid"]
+etovm = ["hex", "rand", "ed25519-dalek", "bs58", "borsh", "reqwest"]
 
 # Utilities
 utils = ["hex", "rand"]
@@ -64,6 +65,11 @@ alloy = { version = "1.7", features = ["full"], optional = true }
 #   tempo-primitives = { git = "https://github.com/tempoxyz/tempo" }
 tempo-alloy = { version = "1", optional = true }
 tempo-primitives = { version = "1", optional = true }
+
+# Ed25519/Solana-style dependencies (optional, for ETOvm)
+ed25519-dalek = { version = "2", features = ["rand_core"], optional = true }
+bs58 = { version = "0.5", optional = true }
+borsh = { version = "1", features = ["derive"], optional = true }
 
 # HTTP client dependencies (optional)
 reqwest = { version = "0.12", features = ["json"], optional = true }
