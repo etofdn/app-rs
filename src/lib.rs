@@ -44,6 +44,9 @@ pub mod server;
 #[cfg(feature = "tempo")]
 pub mod tempo;
 
+#[cfg(feature = "etovm")]
+pub mod etovm;
+
 // ==================== Flat Re-exports ====================
 
 // Error types
