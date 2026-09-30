@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.1 (2026-09-30)
+
+### Patch Changes
+
+- Fixed core problem type base URI to use the canonical `https://paymentauth.org/problems` domain instead of the temporary GitHub Pages URL. (by @NamanBajpai, [4550fd6](https://github.com/etofdn/app-rs/commit/4550fd6))
+
 ## `mpp@0.5.0`
 
 ### Minor Changes
